@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-<% import datetime
-print datetime.date.today().strftime("%d:%m:%y")
-%>
+<input type="text" placeholder="Full Name" name="name">
+  <input type="button" onclick="check(this.name)" value="Login"/>
+  <script>
+    function check(name) {
+    alert('form.name.value')
+    }
+  </script>
 </body>
 </html>
