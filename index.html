@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <form name='name'>
 <input type="text" placeholder="Full Name" name="name">
   <input type="button" onclick="check(this.name)" value="Login"/>
+  </form>
   <script>
     function check(name) {
-    alert(name.value);
+    alert(form.name.value);
     }
   </script>
 </body>
