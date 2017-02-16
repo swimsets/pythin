@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <form name='name'>
-<input type="text" placeholder="Full Name" name="name">
-  <input type="button" onclick="check(this.name)" value="Login"/>
-  </form>
-  <script>
-    function check(name) {
-    alert(name.name.value);
+<script type="text/javascript">
+    var lolz;
+    function onload() { 
+        lolz = document.getElementById('lolz');
     }
-  </script>
+    function kk(){
+        alert(lolz.value);
+    }
+</script>
+
+<body onload="onload();">
+    <input type="text" name="enter" class="enter" value="" id="lolz"/>
+    <input type="button" value="click" onclick="kk();"/>
 </body>
 </html>
